@@ -20,7 +20,7 @@ Kommandopakke til maple for DTU kurset Diskret Matematik 1
 - ExtendecEuclid(A,B) -Kører Euclids udvidede algoritme på A og B og printer resultatet i samme format som i diskret_mat_bog.pdf
 - ExtendedEuclidPoly(A,B,x) -Kører Euclids udvidede algoritme på to polynomier af variablen x og printer resultatet i samme format som i diskret_mat_bog.pdf
 
-## Andre nyttige kommandoer der så at sige altid er indlæst er:
+## Andre nyttige kommandoer:
 - msolve(expr,m) som løser en flere ligninger, expr(s), modulo M. OBS! Kommandoen giver ikke altid den fulde løsning og har for vane kun at give løsninger i intervallet [0 ; m]
 - mod(a,b) denne fungerer som % operatoren i div. programmeringssprog, finder resten ved division af a med b. En anden nytting funktion er mod(1/a,b) som giver det multiplikative invers til a modulo b, hvis det altså eksisterer.
 - a mod b === mod(a,b)
@@ -32,6 +32,7 @@ De logiske konnektiver indtastes således i maple:
 - Logisk eller: **or**
 - Logisk implikation: **implies**
 - Logisk biimplikation: **iff**
+
 Uden andet input bliver disse bare markeret med fed, men hvis ctrl+mellemrum trykkes efter kommer der tegn der måske gøre formlen lidt lettere at læse
 
 Hvis man skulle tjekke om formlen: P v -P var gyldig kunne inputtet se sådan ud:
@@ -45,4 +46,5 @@ Maple kan også regne med mængder.
 - Fællesmængde: **union**
 - Uden: **minus**
 - Subset: **subset**
+
 Disse kan også konverteres til symboler m. ctrl+mellemrum
