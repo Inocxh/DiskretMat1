@@ -66,8 +66,8 @@ DiskretMat1 := module()
     Logic[Equivalent](A,B);
     end proc;
 
-    Implicerer := proc(A)
-    Logic[Implies](A);
+    Implicerer := proc(A,B)
+    Logic[Implies](A,B);
     end proc;
 
     Opfyldelig := proc(A)
@@ -94,5 +94,3 @@ DiskretMat1 := module()
     A*B/gcd(A,B)
     end proc;
 end module; 
-
-
