@@ -21,6 +21,6 @@ Pakken indeholder fgl kommandoer.
 - ExtendedEuclidPoly(A,B,x) -Kører Euclids udviede algoritme på to polynomier af variablen x og printer resultatet i samme format som i diskret_mat_bog.pdf
 
 Andre nyttige kommandoer der så at sige altid er indlæst er:
-- msolve(expr,m) som løser en flere ligninger, expr(s), modulo M. OBS! Kommandoen giver ikke altid den fulde løsning og har for vane at give løsninger i intervallet [0 ; m]
+- msolve(expr,m) som løser en flere ligninger, expr(s), modulo M. OBS! Kommandoen giver ikke altid den fulde løsning og har for vane kun at give løsninger i intervallet [0 ; m]
 - mod(a,b) denne fungerer som % operatoren i div. programmeringssprog, finder resten ved division af a med b. En anden nytting funktion er mod(1/a,b) som giver det multiplikative invers til a modulo b, hvis det altså eksisterer.
 - a mod b === mod(a,b)
