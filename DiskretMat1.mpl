@@ -2,7 +2,7 @@ DiskretMat1 := module()
     description "Tools for the DTU course discrete mathematics 1";
     options package;
 
-    export ExtendedEuclid, ExtendecEuclidPoly, BoolskSimplify, Uopfyldelig, Ækvivalent, Implicerer, Opfyldelig, Opfyld, Gyldig, Sandhedstabel, sfd, mfm;
+    export ExtendedEuclid, ExtendecEuclidPoly, BoolskSimplify, Uopfyldelig, Ækvivalent, Implicerer, Opfyldelig, Opfyld, Gyldig, Sandhedstabel, sfd, mfm, vælg, KinaRest;
     local Logik;
 
         ExtendedEuclid := proc(one,two)
@@ -54,6 +54,16 @@ DiskretMat1 := module()
 			return out;
 		end proc;
 
+    KinaRest := proc(A,B)
+    local a;
+    a:=chrem(A,B);
+    if a = FAIL then
+        return FAIL
+    else 
+        return a +cat(B[1]*B[2],Z)
+    end if
+    end proc;
+
      BoolskSimplify := proc(A)
     Logic[BooleanSimplify](A);
     end proc;
@@ -62,8 +72,8 @@ DiskretMat1 := module()
     Logic[Contradiction](A);
     end proc;
 
-    Ækvivalent := proc(A,B)
-    Logic[Equivalent](A,B);
+    Ækvivalent := proc(Formel1,Formel2)
+    Logic[Equivalent](Formel1,Formel2);
     end proc;
 
     Implicerer := proc(A,B)
@@ -93,4 +103,10 @@ DiskretMat1 := module()
     mfm := proc(A,B)
     A*B/gcd(A,B)
     end proc;
+
+    vælg := proc(A,B)
+    numbcomb[combinat](A,B)
+    end proc;
 end module; 
+
+with(Logic):
