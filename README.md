@@ -17,8 +17,15 @@ Kommandopakke til maple for DTU kurset Diskret Matematik 1
 - sfd(A,B) - Finder største fælles divisor for A og B
 - mfm(A,B) - Finder mindste fælles multiplum for A og B
 
+- vælg(n,k) - Vælger k elementer ud fra en mængde af n forskellige.
+
+- KinaRest(X, M) - Når to udtryk for x for to forskellige modulo kan KinaRest finde løsningsmængden. X indputtes som en liste af x's værdier, Y inputtes som en en liste af de modulo vi arbejder med. 
+  F.eks x = 10 (mod 5), x = 5 (mod 291). Løses ved KinaRest([10,5] = [5,291])
+
 - ExtendecEuclid(A,B) -Kører Euclids udvidede algoritme på A og B og printer resultatet i samme format som i diskret_mat_bog.pdf
 - ExtendedEuclidPoly(A,B,x) -Kører Euclids udvidede algoritme på to polynomier af variablen x og printer resultatet i samme format som i diskret_mat_bog.pdf
+
+
 
 ## Andre nyttige kommandoer:
 - msolve(expr,m) som løser en flere ligninger, expr(s), modulo M. OBS! Kommandoen giver ikke altid den fulde løsning og har for vane kun at give løsninger i intervallet [0 ; m]
