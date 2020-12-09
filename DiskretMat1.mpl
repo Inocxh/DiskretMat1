@@ -34,7 +34,7 @@ DiskretMat1 := module()
                 return out;
             end proc;
 			
-		ExtendecEuclidPoly := proc(in1, in2, x) 
+		ExtendedEuclidPoly := proc(in1, in2, x) 
 			local a, b, remainder, quotient, out, k;
 			#Initialization of variables and already known rows
 			a := in1; b := in2; remainder := rem(a, b, x); quotient := quo(a, b, x);
