@@ -22,7 +22,7 @@ Kommandopakke til maple for DTU kurset Diskret Matematik 1
 - KinaRest(X, M) - Når to udtryk for x for to forskellige modulo kan KinaRest finde løsningsmængden. X indputtes som en liste af x's værdier, Y inputtes som en en liste af de modulo vi arbejder med.
   F.eks x = 10 (mod 5), x = 5 (mod 291). Løses ved KinaRest([10,5] = [5,291])
 
-- ExtendecEuclid(A,B) -Kører Euclids udvidede algoritme på A og B og printer resultatet i samme format som i diskret_mat_bog.pdf
+- ExtendedEuclid(A,B) -Kører Euclids udvidede algoritme på A og B og printer resultatet i samme format som i diskret_mat_bog.pdf
 - ExtendedEuclidPoly(A,B,x) -Kører Euclids udvidede algoritme på to polynomier af variablen x og printer resultatet i samme format som i diskret_mat_bog.pdf
 
 
