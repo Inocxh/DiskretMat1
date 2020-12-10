@@ -19,7 +19,7 @@ Kommandopakke til maple for DTU kurset Diskret Matematik 1
 
 - vælg(n,k) - Vælger k elementer ud fra en mængde af n forskellige.
 
-- KinaRest(X, M) - Når to udtryk for x for to forskellige modulo kan KinaRest finde løsningsmængden. X indputtes som en liste af x's værdier, Y inputtes som en en liste af de modulo vi arbejder med. 
+- KinaRest(X, M) - Når to udtryk for x for to forskellige modulo kan KinaRest finde løsningsmængden. X indputtes som en liste af x's værdier, Y inputtes som en en liste af de modulo vi arbejder med.
   F.eks x = 10 (mod 5), x = 5 (mod 291). Løses ved KinaRest([10,5] = [5,291])
 
 - ExtendecEuclid(A,B) -Kører Euclids udvidede algoritme på A og B og printer resultatet i samme format som i diskret_mat_bog.pdf
@@ -35,7 +35,7 @@ Kommandopakke til maple for DTU kurset Diskret Matematik 1
 ## Indtastning af logiske formler i maple
 Når du indtaster en formel i maple anser den alle tegn der ikke er logiske konnektiver for variable.
 De logiske konnektiver indtastes således i maple:
-- Logisk og: **and** 
+- Logisk og: **and**
 - Logisk eller: **or**
 - Logisk implikation: **implies**
 - Logisk biimplikation: **iff**
