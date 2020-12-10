@@ -13,10 +13,10 @@ DiskretMat1 := module()
                 local out,new,k,a,b;
                 #Initialization of first three rows.
                 out := Array(1 .. 1, 1 .. 5); k; a := one;b := two;new := a mod b;
-                out(1) := k;out(2) := r__k;out(3) := q__k; out(4) := s__k; out(5) := t__k; 
+                out(1) := k;out(2) := r__k;out(3) := q__k; out(4) := s__k; out(5) := t__k;
                 out(2, 1) := 1;out(2, 2) := one;out(2, 3) := "-"; out(2, 4) := 1; out(2, 5) := 0; out(3, 1) := 2; out(3, 2) := two; out(3, 3) := "-"; out(3, 4) := 0; out(3, 5) := 1;
                 k := 4; #The current row we operate on
-                
+
                     out(k, 1) := k - 1;
                     out(k, 2) := new;
                     out(k, 3) := iquo(a, b);
@@ -37,18 +37,18 @@ DiskretMat1 := module()
                 end do;
                 return out;
             end proc;
-			
-		ExtendedEuclidPoly := proc(in1, in2, x) 
+
+		ExtendedEuclidPoly := proc(in1, in2, x)
 			local a, b, remainder, quotient, out, k;
 			#Initialization of variables and already known rows
 			a := in1; b := in2; remainder := rem(a, b, x); quotient := quo(a, b, x);
 			out := Array(1 .. 1, 1 .. 5); out(1) := k; out(2) := r__k; out(3) := q__k; out(4) := s__k; out(5) := t__k;
 			out(2, 1) := 1; out(2, 2) := a; out(2, 3) := "-"; out(2, 4) := 1; out(2, 5) := 0;
 			out(3, 1) := 2; out(3, 2) := b; out(3, 3) := "-"; out(3, 4) := 0; out(3, 5) := 1;
-			
+
 			#Fencepost solution, first post init so we always get the last operation
 			k := 4; out(k, 1) := k - 1; out(k, 2) := remainder; out(k, 3) := quotient; out(k, 4) := out(k - 2, 4) - out(k, 3)*out(k - 1, 4); out(k, 5) := out(k - 2, 5) - out(k, 3)*out(k - 1, 5);
-			while remainder <> 0 do 
+			while remainder <> 0 do
 				k := k + 1;
 				a := b;
 				b := remainder;
@@ -63,7 +63,7 @@ DiskretMat1 := module()
     a:=chrem(A,B);
     if a = FAIL then
         return FAIL
-    else 
+    else
         return a +cat(B[1]*B[2],Z)
     end if
     end proc;
@@ -100,7 +100,7 @@ DiskretMat1 := module()
     Logic[TruthTable](A);
     end proc;
 
-    sfd := proc(A,B) 
+    sfd := proc(A,B)
     gcd(A,B)
     end proc;
 
@@ -111,5 +111,8 @@ DiskretMat1 := module()
     vælg := proc(A,B)
     combinat[numbcomb](A,B)
     end proc;
-    
-end module; 
+
+end module;
+
+#Save DiskretMat1 as Maple Library Archive 
+savelib('DiskretMat1', "DiskretMat1.mla")

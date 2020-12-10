@@ -1,6 +1,21 @@
 # DiskretMat1
 Kommandopakke til maple for DTU kurset Diskret Matematik 1
 
+## Installation
+Download repo (evt. som ZIP folder) og find `DiskretMat1.mla`
+
+### Windows
+Flyt `DiskretMat1.mla` til `C:\Program Files\Maple 2020\lib\`. Husk at tjekke det er den rigtige version af Maple. Genstart derefter Maple.
+
+### Mac
+Er ikke sikker med Mac, men burde være noget a la `Macintosh HD/Bibliotek/Frameworks/Maple.framework/Versions/2020/lib/`. Genstart derefter Maple.
+
+### Linux
+Flyt `DiskretMat1.mla` til `~/maple2020/lib/`. Husk at tjekke det er den rigtige version af Maple. Genstart derefter Maple.
+
+## Importer pakken
+Åben Maple og importer parken med `with(DiskretMat1):`
+
 ## Pakken indeholder fgl kommandoer.
 
 - BoolskSimplify(F) - Alias for Logic\[BooleanSimplify\], forsøger at reducere F
