@@ -2,8 +2,12 @@ DiskretMat1 := module()
     description "Tools for the DTU course discrete mathematics 1";
     options package;
 
-    export ExtendedEuclid, ExtendecEuclidPoly, BoolskSimplify, Uopfyldelig, Ækvivalent, Implicerer, Opfyldelig, Opfyld, Gyldig, Sandhedstabel, sfd, mfm, vælg, KinaRest;
+    export ExtendedEuclid, ExtendedEuclidPoly, BoolskSimplify, Uopfyldelig, Ækvivalent, Implicerer, Opfyldelig, Opfyld, Gyldig, Sandhedstabel, sfd, mfm, vælg, KinaRest, ModuleLoad;
     local Logik;
+
+        ModuleLoad := proc()
+        with(Logic);
+        end proc;
 
         ExtendedEuclid := proc(one,two)
                 local out,new,k,a,b;
@@ -105,8 +109,7 @@ DiskretMat1 := module()
     end proc;
 
     vælg := proc(A,B)
-    numbcomb[combinat](A,B)
+    combinat[numbcomb](A,B)
     end proc;
+    
 end module; 
-
-with(Logic):
