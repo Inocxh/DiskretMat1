@@ -2,7 +2,7 @@ DiskretMat1 := module()
     description "Tools for the DTU course discrete mathematics 1";
     options package;
 
-    export ExtendedEuclid, ExtendedEuclidPoly, BoolskSimplify, Uopfyldelig, Ækvivalent, Implicerer, Opfyldelig, Opfyld, Gyldig, Sandhedstabel, sfd, mfm, vælg, KinaRest, ModuleLoad;
+    export ExtendedEuclid, ExtendedEuclidPoly, BoolskSimplify, Uopfyldelig, Aekvivalent, Implicerer, Opfyldelig, Opfyld, Gyldig, Sandhedstabel, sfd, mfm, vaelg, KinaRest, ModuleLoad;
     local Logik;
 
         ModuleLoad := proc()
@@ -115,4 +115,4 @@ DiskretMat1 := module()
 end module;
 
 #Save DiskretMat1 as Maple Library Archive 
-savelib('DiskretMat1', "DiskretMat1.mla")
+savelib('DiskretMat1', "DiskretMat1.mla");

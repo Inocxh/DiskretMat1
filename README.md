@@ -26,13 +26,13 @@ Flyt `DiskretMat1.mla` til `~/maple2020/lib/`. Husk at tjekke det er den rigtige
 - Gyldig(F) - Alias for Logic\[Tautology\], tjekker om en formel, F, er gyldig.
 - Uopfyldelig(F) - Alias for Logic\[Contradiction\], tjekker om en formel er uopfyldelig
 
-- Ækvivalent(A,B) - Alias for Logic\[Equivalent\], tjekker om to formler, A og B er logisk ækvivalente
+- Aevivalent(A,B) - Alias for Logic\[Equivalent\], tjekker om to formler, A og B er logisk ækvivalente
 - Implicerer(A,B) - Alias for Logic\[Implies\], tjekker om A medfører B. Ævivalent med at tjekke om (A -> B) er gyldig
 
 - sfd(A,B) - Finder største fælles divisor for A og B
 - mfm(A,B) - Finder mindste fælles multiplum for A og B
 
-- vælg(n,k) - Vælger k elementer ud fra en mængde af n forskellige.
+- vaelg(n,k) - Vælger k elementer ud fra en mængde af n forskellige.
 
 - KinaRest(X, M) - Når to udtryk for x for to forskellige modulo kan KinaRest finde løsningsmængden. X indputtes som en liste af x's værdier, Y inputtes som en en liste af de modulo vi arbejder med.
   F.eks x = 10 (mod 5), x = 5 (mod 291). Løses ved KinaRest([10,5] = [5,291])
