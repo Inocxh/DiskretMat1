@@ -35,7 +35,7 @@ Flyt `DiskretMat1.mla` til `~/maple2020/lib/`. Husk at tjekke det er den rigtige
 - vaelg(n,k) - Vælger k elementer ud fra en mængde af n forskellige.
 
 - KinaRest(X, M) - Når to udtryk for x for to forskellige modulo kan KinaRest finde løsningsmængden. X indputtes som en liste af x's værdier, Y inputtes som en en liste af de modulo vi arbejder med.
-  F.eks x = 10 (mod 5), x = 5 (mod 291). Løses ved KinaRest([10,5] = [5,291])
+  F.eks x = 10 (mod 5), x = 6 (mod 291). Løses ved KinaRest([10,6] = [5,291])
 
 - ExtendedEuclid(A,B) -Kører Euclids udvidede algoritme på A og B og printer resultatet i samme format som i diskret_mat_bog.pdf
 - ExtendedEuclidPoly(A,B,x) -Kører Euclids udvidede algoritme på to polynomier af variablen x og printer resultatet i samme format som i diskret_mat_bog.pdf
