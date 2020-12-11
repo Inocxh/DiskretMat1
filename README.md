@@ -70,3 +70,21 @@ Maple kan også regne med mængder.
 - Subset: **subset**
 
 Disse kan også konverteres til symboler m. ctrl+mellemrum
+
+### Recursion i maple
+
+De rekursive funktioner vi arbejder med i Diskret skal have et basistilfælde og en metode til at tage trinnet under. Et eksempel på en rekursiv funktion findes under:
+
+```
+#Her defineres funktionen f
+f := proc(n) # f defineres som en procedure der tager ét argument, n.
+if n = 0 then #Gammel syntax, if <boolean> then
+return 1
+else if n = 1 then
+return 1
+else 
+return f(n-1)+f(n-2)
+end if # Igen en gammel måde at lave scripting sprog, men det virker. Der er to end if'er fordi else if statementet teknisk set er et separat statement inde i den første if-blok.
+end if
+end proc
+```
