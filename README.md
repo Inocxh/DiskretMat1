@@ -26,7 +26,7 @@ Flyt `DiskretMat1.mla` til `~/maple2020/lib/`. Husk at tjekke det er den rigtige
 - Gyldig(F) - Alias for Logic\[Tautology\], tjekker om en formel, F, er gyldig.
 - Uopfyldelig(F) - Alias for Logic\[Contradiction\], tjekker om en formel er uopfyldelig
 
-- Aevivalent(A,B) - Alias for Logic\[Equivalent\], tjekker om to formler, A og B er logisk ækvivalente
+- Aekvivalent(A,B) - Alias for Logic\[Equivalent\], tjekker om to formler, A og B er logisk ækvivalente
 - Implicerer(A,B) - Alias for Logic\[Implies\], tjekker om A medfører B. Ævivalent med at tjekke om (A -> B) er gyldig
 
 - sfd(A,B) - Finder største fælles divisor for A og B
